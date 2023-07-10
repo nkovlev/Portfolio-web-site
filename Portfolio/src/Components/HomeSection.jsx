@@ -20,7 +20,7 @@ useEffect(() => {
 }, []);
 
 return (
-    <div className="h-screen flex flex-col justify-center items-center gap-6 text-white" id="home-section">
+    <div className="h-screen flex flex-col justify-center items-center gap-6 text-white">
         <h1 className="text-5xl font-poppins font-extrabold">
             Howdy, I am <span className='text-purple-700'>Mykyta Kovlev</span>
         </h1>

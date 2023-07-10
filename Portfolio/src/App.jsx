@@ -25,32 +25,30 @@ function App() {
   const SelectedComponent = menuItems.find((menuItem) => menuItem.name === selectedItem)?.component;
 
   return (
-    <>
-      <header className="fixed top-0 w-full flex items-center justify-around z-10 mt-10" style={{ backgroundImage: `url(${bg})`}}>
-        <div className="flex items-center gap-4">
-          <img src={logo} alt="logo" className="w-10 h-10" />
-          <h2 className="text-purple-700 text-xl font-poppins font-extrabold">.Nick</h2>
-        </div>
-        <ul className=" text-white flex items-center gap-5">
-          {menuItems.map((menuItem, index) => (
-            <li
-              key={index}
-              onClick={() => handleMenuItemClick(menuItem.name)}
-              className={`font-medium text-lg hover:text-white`}
-            >
-              <Link
-                to={menuItem.name.toLowerCase()}
-                onClick={() => handleMenuItemClick(menuItem.name)}
-                className={selectedItem === menuItem.name ? 'text-purple-700' : 'text-white'}
+    <div style={{ backgroundImage: `url(${bg})`}}>
+      <header className="fixed top-0 w-full flex items-center justify-center mt-10">
+        <div className="flex w-3/5 justify-between">
+          <div className="flex items-center gap-4">
+            <img src={logo} alt="logo" className="w-10 h-10" />
+            <h2 className="text-purple-700 text-xl font-poppins font-extrabold">.Nick</h2>
+          </div>
+          <ul className=" text-white flex items-center gap-5">
+            {menuItems.map((menuItem, index) => (
+            <li key={index} onClick={()=> handleMenuItemClick(menuItem.name)}
+              className={`font-medium text-lg hover:text-purple-700 cursor-pointer`}
               >
-                {menuItem.name}
+              <Link to={menuItem.name.toLowerCase()} onClick={()=> handleMenuItemClick(menuItem.name)}
+              className={selectedItem === menuItem.name ? 'text-purple-700' : ''}
+              >
+              {menuItem.name}
               </Link>
             </li>
-          ))}
-        </ul>
+            ))}
+          </ul>
+        </div>
       </header>
       {SelectedComponent ? <SelectedComponent /> : null}
-    </>
+    </div>
   );
 }
 
