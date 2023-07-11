@@ -1,7 +1,7 @@
 import {LocationOn, LocalPhone, Email, LinkedIn} from '@mui/icons-material'
 
 const ContactsInfo = () => {
-  return (
+return (
     <div className='flex flex-col gap-5 w-2/3 mt-12'>
         <div className="flex bg-neutral-800 pl-8 py-3 rounded-lg gap-2">
             <LocationOn className='text-purple-700'/>
@@ -20,7 +20,7 @@ const ContactsInfo = () => {
             <a href='https://www.linkedin.com/in/mykyta-kovlev/' target='blank' className="text-white font-normal  hover:text-purple-700">mykyta-kovlev</a>
         </div>
     </div>
-  )
+)
 }
 
 export default ContactsInfo
