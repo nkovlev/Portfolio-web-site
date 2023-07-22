@@ -26,7 +26,7 @@ return (
             Mykyta<span className='text-purple-700'> Kovlev</span>
         </h1>
         <p className="text-3xl font-semibold text-gray-400">
-        I am <span className="typed-text text-white"></span>.
+        I am <span className="typed-text text-white"></span>
         </p>
         <Link to={'/contacts'} className='mt-8 bg-purple-500 py-3 px-10 rounded-full text-white hover:bg-white hover:text-black'>Get in Touch</Link>
     </div>
