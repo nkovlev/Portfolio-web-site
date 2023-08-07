@@ -2,6 +2,7 @@ import me from '../images/me.jpg'
 import { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 const AboutSection = () => {
     const typedRef = useRef(null);
@@ -21,7 +22,7 @@ const AboutSection = () => {
     }, []);
 
     return (
-    <div className="h-full mt-40 flex flex-col justify-center items-center">
+    <motion.div className="h-full mt-40 flex flex-col justify-center items-center" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} transition={{ duration: 0.5 }}>
         <div className="h-96 w-3/5 flex gap-20">
             <div className="w-2/3">
                 <img src={me} alt="me" className='w-72'/>
@@ -36,7 +37,7 @@ const AboutSection = () => {
                 <Link to={'/info'} className='bg-purple-500 py-3 px-10 rounded-full text-white hover:bg-white hover:text-black'>Learn more</Link>
             </div>
         </div>
-    </div>
+    </motion.div>
     );
 };
 

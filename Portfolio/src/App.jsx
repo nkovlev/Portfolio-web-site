@@ -11,7 +11,6 @@ import AboutModal from './Components/AboutModal';
 
 function App() {
   const [showHeader, setShowHeader] = useState(true);
-
   return (
     <Router>
       <div style={{ backgroundImage: `url(${bg})` }}>
@@ -21,7 +20,7 @@ function App() {
           <Route path="/about" element={<AboutSection />} />
           <Route
             path="/info"
-            element={<AboutModal onHideHeader={() => setShowHeader(false)} onShowHeader={() => setShowHeader(true)} />}
+            element={<AboutModal onHideHeader={() => setShowHeader(false)} onShowHeader={() => setShowHeader(true)} prevPath={location.pathname}/>}
           />
           <Route path="/projects" element={<ProjectsSection />} />
           <Route path="/contacts" element={<ContactsSection />} />
