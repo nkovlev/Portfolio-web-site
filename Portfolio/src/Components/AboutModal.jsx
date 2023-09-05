@@ -28,7 +28,7 @@ typedRef.current.destroy();
 
 
 return (
-<motion.div className="w-screen h-screen bg-black flex justify-center gap-5 pt-20" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} transition={{ duration: 0.5 }}>
+<motion.div className="w-screen h-screen flex justify-center gap-5 pt-20" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} transition={{ duration: 0.5 }}>
   <div className="w-3/5 h-4/5 bg-neutral-800 rounded-md flex">
     <div className="w-1/3 h-full flex flex-col items-center gap-1 mt-10 static">
       <img src={me} alt="me" className="rounded-full w-32 h-32" />

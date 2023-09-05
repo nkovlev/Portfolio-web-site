@@ -1,14 +1,8 @@
-import netflix from '../images/Netflix.png';
-import battle from '../images/Battle.png'
+/* eslint-disable react/prop-types */
 import ProjectCard from './ProjectCard';
 import { motion } from 'framer-motion';
 
-const projects = [
-  { logo: netflix, title: 'Netflix Clone' },
-  { logo: battle, title: 'Battle App' },
-];
-
-const ProjetsSection = () => {
+const ProjetsSection = ({projects}) => {
   return (
     <motion.div className="h-full mt-28 flex flex-col justify-center items-center" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} transition={{ duration: 0.5 }}>
       <div className="h-96 w-3/5">
@@ -21,6 +15,7 @@ const ProjetsSection = () => {
             <ProjectCard key={index} logo={project.logo} title={project.title} />
           ))}
         </div>
+        
       </div>
     </motion.div>
   );

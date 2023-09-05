@@ -21,7 +21,7 @@ const Header = () => {
 
   const handleMenuItemClick = (item) => {
     setSelectedItem(item);
-    localStorage.setItem('selectedItem', item); // Сохраняем в локальное хранилище
+    localStorage.setItem('selectedItem', item);
   };
 
   return (

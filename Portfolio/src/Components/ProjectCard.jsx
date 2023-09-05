@@ -1,12 +1,20 @@
 import { motion, useAnimation } from 'framer-motion';
-const ProjectCard = ({ logo, title }) => {
+import { useNavigate } from 'react-router-dom';
+// eslint-disable-next-line react/prop-types
+const ProjectCard = ({ logo, title}) => {
+const navigate = useNavigate()
 const controls = useAnimation();
+
 const handleHover = (isHovered) => {
-controls.start({ y: isHovered ? -15 : 60, opacity: isHovered ? 1 : 0 });
+    controls.start({ y: isHovered ? -15 : 60, opacity: isHovered ? 1 : 0 });
 };
+const handleCardClick = () => {
+    navigate(`/project/${title}`);
+  };  
 return (
-<div className="w-[250px] h-[250px] relative overflow-hidden" onMouseEnter={()=> handleHover(true)}
+<div className="w-[250px] h-[250px] relative overflow-hidden rounded-xl" onMouseEnter={()=> handleHover(true)}
     onMouseLeave={() => handleHover(false)}
+    onClick={handleCardClick}
     >
     <motion.div className="w-[250px] h-[250px] bg-purple-700 flex items-center justify-center"
         whileHover={{ scale: 1.1 }}>
