@@ -8,6 +8,7 @@ import ContactsSection from './Components/ContactsSection';
 import Header from './Components/Header';
 import AboutModal from './Components/AboutModal';
 import ProjectModal from './Components/ProjectModal';
+import BattleHome from './images/battle app home.png'
 
 import netflixLogo from './images/Netflix.png';
 import battleLogo from './images/Battle.png'
@@ -20,12 +21,13 @@ function App() {
       logo: netflixLogo,
       title: 'Netflix Clone',
       home: neflixHome,
-      link: 'https://lovely-daffodil-4145b0.netlify.app/'
+      description: 'This app is a clone of the official Netflix website that was created for educational purposes. The purpose of this project is to improve my skills in React and learn new technologies that will help me build web applications.',
+      technologies:['JavaScript','React','React Router','Tailwind','Firebase','Axios','TMDB API','Formik']
     },
     { 
       logo: battleLogo, 
       title: 'Battle App',
-      home: neflixHome,
+      home: BattleHome,
     },
   ];
   return (

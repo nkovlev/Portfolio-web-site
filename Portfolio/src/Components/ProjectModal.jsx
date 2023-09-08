@@ -23,8 +23,18 @@ const ProjectModal = ({ onHideHeader, onShowHeader, projects }) => {
                 <div className="flex flex-col items-center mt-14">
                     <img src={selectedProject.home} alt="home" className='w-5/6' />
                 </div>
-                <div className="ml-16 text-white font-poppins font-semibold text-3xl">
-                    {selectedProject.title}
+                <div className="ml-16">
+                    <div className=" text-white font-poppins font-semibold text-3xl mt-3">
+                        {selectedProject.title}
+                    </div>
+                    <div className="text-white text-md max-w-2xl font-poppins font-medium mt-3">
+                        {selectedProject.description}
+                    </div>
+                    <ul className="">
+                        {selectedProject.technologies.map((tech) => (
+                            <li className='text-white' key="id">{tech}</li>
+                        ))}
+                    </ul>
                 </div>
             </div>
             
