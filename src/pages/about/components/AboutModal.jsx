@@ -2,7 +2,7 @@
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { Close } from '@mui/icons-material';
-import me from '../images/me_logo.jpeg';
+import me from '../../../images/me_logo.jpeg';
 import Typed from 'typed.js';
 import ModalInfo from './ModalInfo';
 import ModalLanguages from './ModalLanguages';

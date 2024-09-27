@@ -1,5 +1,5 @@
-import ContactsForm from "./ContactsForm"
-import ContactsInfo from "./ContactsInfo"
+import ContactsForm from "./components/ContactsForm"
+import ContactsInfo from "./components/ContactsInfo"
 import { motion } from 'framer-motion';
 
 const ContactsSection = () => {

@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import AboutModal from './pages/about/components/AboutModal';
-import ContactsSection from './Components/ContactsSection';
-import Header from './Components/Header';
+import ContactsSection from './pages/contacts/ContactsSection';
+import Header from './Layout/Header';
 import ProjectModal from './pages/projects/components/ProjectModal';
 import BattleHome from './images/battle app home.png';
 import bg from './images/bg.jpg';
