@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import ProjectCard from './ProjectCard';
+import ProjectCard from './components/ProjectCard';
 import { motion } from 'framer-motion';
 
 const ProjetsSection = ({projects}) => {
