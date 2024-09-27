@@ -4,8 +4,8 @@ const ProgrammingSkills = [
   { lang: 'HTML', progress: 90 },
   { lang: 'CSS', progress: 80 },
   { lang: 'JavaScript', progress: 50 },
-  { lang: 'React', progress: 40 },
-  { lang: 'Tailwind CSS', progress: 50 }
+  { lang: 'React', progress: 50 },
+  { lang: 'Tailwind CSS', progress: 70 }
 ];
 
 const ModalSkills = () => {

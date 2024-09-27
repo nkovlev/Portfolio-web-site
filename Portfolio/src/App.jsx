@@ -43,7 +43,7 @@ function App() {
           />
           <Route path="/projects" element={<ProjectsSection projects={projects}/>} />
           <Route path="/contacts" element={<ContactsSection />} />
-          <Route path="/project/:title" element={<ProjectModal projects={projects} onHideHeader={() => setShowHeader(false)} onShowHeader={() => setShowHeader(true)} />} />
+          <Route path="/project/:title?" element={<ProjectModal projects={projects} onHideHeader={() => setShowHeader(false)} onShowHeader={() => setShowHeader(true)} />} />
         </Routes>
       </div>
     </Router>
