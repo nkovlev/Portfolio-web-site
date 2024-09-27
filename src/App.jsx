@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import bg from './images/bg.jpg';
-import HomeSection from './Components/HomeSection';
+import HomeSection from './pages/home/HomeSection';
 import AboutSection from './Components/AboutSection';
 import ProjectsSection from './Components/ProjectsSection';
 import ContactsSection from './Components/ContactsSection';
