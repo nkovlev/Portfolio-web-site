@@ -1,4 +1,4 @@
-import me from '../images/me.jpg'
+import me from '../../images/me.jpg'
 import { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
 import { Link } from 'react-router-dom';

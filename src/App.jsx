@@ -1,18 +1,18 @@
 import { useState } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import bg from './images/bg.jpg';
-import HomeSection from './pages/home/HomeSection';
-import AboutSection from './Components/AboutSection';
-import ProjectsSection from './Components/ProjectsSection';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import AboutModal from './pages/about/components/AboutModal';
 import ContactsSection from './Components/ContactsSection';
 import Header from './Components/Header';
-import AboutModal from './Components/AboutModal';
-import ProjectModal from './Components/ProjectModal';
-import BattleHome from './images/battle app home.png'
+import ProjectModal from './pages/projects/components/ProjectModal';
+import BattleHome from './images/battle app home.png';
+import bg from './images/bg.jpg';
+import AboutSection from './pages/about';
+import HomeSection from './pages/home/HomeSection';
+import ProjectsSection from './pages/projects/ProjectsSection';
 
+import battleLogo from './images/Battle.png';
 import netflixLogo from './images/Netflix.png';
-import battleLogo from './images/Battle.png'
-import neflixHome from './images/NetflixHomePage.jpg'
+import neflixHome from './images/NetflixHomePage.jpg';
 
 function App() {
   const [showHeader, setShowHeader] = useState(true);
